@@ -1,0 +1,5 @@
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clswinApi\bin\Debug\clswinApi.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clswinApi\bin\Debug\clswinApi.pdb
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clswinApi\obj\Debug\clswinApi.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clswinApi\obj\Debug\clswinApi.pdb
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clswinApi\obj\Debug\clswinApi.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\clsDB.dll.config
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\clsDB.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\clsDB.pdb
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\EntityFramework.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\EntityFramework.SqlServer.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\EntityFramework.xml
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\EntityFramework.SqlServer.xml
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\obj\Debug\clsDB.csprojResolveAssemblyReference.cache
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\obj\Debug\clsDB.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\obj\Debug\clsDB.pdb
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\clswinApi.dll
+C:\sahanbai_dotnet\estimateprocessing\EstimateProcessing\clsDB\bin\Debug\clswinApi.pdb
