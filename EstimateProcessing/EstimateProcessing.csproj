@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A6A58627-B9ED-4754-A25D-A343BF031D53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EstimateProcessing</RootNamespace>
+    <AssemblyName>EstimateProcessing</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsMITMR010.cs" />
+    <Compile Include="clsSpdDataContent.cs" />
+    <Compile Include="frmMITMR010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMITMR010.Designer.cs">
+      <DependentUpon>frmMITMR010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMITMR010P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMITMR010P.Designer.cs">
+      <DependentUpon>frmMITMR010P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMITMR010S.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMITMR010S.Designer.cs">
+      <DependentUpon>frmMITMR010S.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefMakTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefMakTbl.Designer.cs">
+      <DependentUpon>frmRefMakTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefSirMst2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefSirMst2.Designer.cs">
+      <DependentUpon>frmRefSirMst2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefSyoTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefSyoTbl.Designer.cs">
+      <DependentUpon>frmRefSyoTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefTypTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefTypTbl.Designer.cs">
+      <DependentUpon>frmRefTypTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRefUniTbl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRefUniTbl.Designer.cs">
+      <DependentUpon>frmRefUniTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSiireTanka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSiireTanka.Designer.cs">
+      <DependentUpon>frmSiireTanka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStPrinterSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStPrinterSelect.Designer.cs">
+      <DependentUpon>frmStPrinterSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStProgressBar.Designer.cs">
+      <DependentUpon>frmStProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTypeSerch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTypeSerch.Designer.cs">
+      <DependentUpon>frmTypeSerch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUnitSerch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnitSerch.Designer.cs">
+      <DependentUpon>frmUnitSerch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersion.Designer.cs">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="saFrm_Sansyo901.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saFrm_Sansyo901.Designer.cs">
+      <DependentUpon>saFrm_Sansyo901.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saFrm_Sansyo902.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saFrm_Sansyo902.Designer.cs">
+      <DependentUpon>saFrm_Sansyo902.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saFrm_Sansyo906.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saFrm_Sansyo906.Designer.cs">
+      <DependentUpon>saFrm_Sansyo906.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmMITMR010.resx">
+      <DependentUpon>frmMITMR010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMITMR010P.resx">
+      <DependentUpon>frmMITMR010P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMITMR010S.resx">
+      <DependentUpon>frmMITMR010S.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefMakTbl.resx">
+      <DependentUpon>frmRefMakTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefSirMst2.resx">
+      <DependentUpon>frmRefSirMst2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefSyoTbl.resx">
+      <DependentUpon>frmRefSyoTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefTypTbl.resx">
+      <DependentUpon>frmRefTypTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRefUniTbl.resx">
+      <DependentUpon>frmRefUniTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSiireTanka.resx">
+      <DependentUpon>frmSiireTanka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStPrinterSelect.resx">
+      <DependentUpon>frmStPrinterSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStProgressBar.resx">
+      <DependentUpon>frmStProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTypeSerch.resx">
+      <DependentUpon>frmTypeSerch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnitSerch.resx">
+      <DependentUpon>frmUnitSerch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersion.resx">
+      <DependentUpon>frmVersion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="saFrm_Sansyo901.resx">
+      <DependentUpon>saFrm_Sansyo901.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saFrm_Sansyo902.resx">
+      <DependentUpon>saFrm_Sansyo902.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saFrm_Sansyo906.resx">
+      <DependentUpon>saFrm_Sansyo906.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clsDB\clsDB.csproj">
+      <Project>{d83e93fe-aa3c-48ac-acc0-db97e14cdffe}</Project>
+      <Name>clsDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\clswinApi\clswinApi.csproj">
+      <Project>{03b9aee2-0953-455f-ad7c-b9e8c2b8eec4}</Project>
+      <Name>clswinApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VBlibrary\VBlibrary.vbproj">
+      <Project>{8eec8ebb-6d02-4f26-a190-1af88497af08}</Project>
+      <Name>VBlibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
