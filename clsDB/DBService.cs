@@ -19,23 +19,22 @@ namespace clsDB
         private DbConnection conn;
 
 
-        private TransactionScope tran;
+        private  static TransactionScope tran;
         public DBService()
         {
-            context = new Model1();
+            context = new DbContext(StaticWinApi.connStr);
             conn = context.Database.Connection;
-            tran = null;
         }
 
 
         public DataTable GetDatafromDB(string qrystring)
         {
             //initiate  if was  not initiated
-            if (context == null )
+            if (context == null || context.Database.Connection.State == ConnectionState.Closed )
             {
-                context = new Model1();
+                context = new DbContext(StaticWinApi.connStr);
                 conn = context.Database.Connection;
-                tran = null;
+
             }
                 
                 
@@ -72,7 +71,7 @@ namespace clsDB
         {
 
             {
-                var dt = new DataTable();
+
                 var connectionState = conn.State;
                 try
                 {
@@ -128,7 +127,7 @@ namespace clsDB
                 return true;
             }
 
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw;
