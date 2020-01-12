@@ -406,6 +406,7 @@ Public Module modHanbai
     Public Function NCnvN(buf As Object) As String
         If IsDBNull(buf) Then
             NCnvN = ""
+
         ElseIf buf.ToString() = "" Then
             NCnvN = ""
         Else

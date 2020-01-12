@@ -913,57 +913,57 @@ Exit_OrdMDatReadProc:
         For Each dr As DataRow In dt.Rows
             ReDim Preserve OrdDDat(DCount)
             With OrdDDat(DCount)
-                .OrdD_001 = NCnvN(dt.Rows(0)("OrdD_001"))      ' 契約№
-                .OrdD_002 = NCnvN(dt.Rows(0)("OrdD_002"))      ' 見積№
-                .OrdD_003 = NCnvZ(dt.Rows(0)("OrdD_003"))      ' SEQ
-                .OrdD_004 = NCnvZ(dt.Rows(0)("OrdD_004"))      ' 項目
-                .OrdD_005 = NCnvN(dt.Rows(0)("OrdD_005"))      ' 品名
-                .OrdD_006 = NCnvN(dt.Rows(0)("OrdD_006"))      ' 品番
-                .OrdD_007 = NCnvN(dt.Rows(0)("OrdD_007"))      ' 仕入先名称
-                .OrdD_0071 = NCnvZ(dt.Rows(0)("OrdD_0071"))    ' 仕入先ｺｰﾄﾞ
-                .OrdD_008 = NCnvZ(dt.Rows(0)("OrdD_008"))      ' 見積数量
-                .OrdD_009 = NCnvN(dt.Rows(0)("OrdD_009"))      ' 単位
-                .OrdD_010 = NCnvZ(dt.Rows(0)("OrdD_010"))      ' 見積販売単価
-                .OrdD_011 = NCnvZ(dt.Rows(0)("OrdD_011"))      ' 見積販売金額
-                .OrdD_012 = NCnvZ(dt.Rows(0)("OrdD_012"))      ' (見積原価単価)
-                .OrdD_013 = NCnvZ(dt.Rows(0)("OrdD_013"))      ' 掛け率
-                .OrdD_014 = NCnvZ(dt.Rows(0)("OrdD_014"))      ' 見積原価単価NET
-                .OrdD_015 = NCnvZ(dt.Rows(0)("OrdD_015"))      ' (見積原価金額)
-                .OrdD_016 = NCnvZ(dt.Rows(0)("OrdD_016"))      ' (粗利益)
-                .OrdD_017 = NCnvN(dt.Rows(0)("OrdD_017"))      ' 仕入先名
-                .OrdD_018 = NCnvZ(dt.Rows(0)("OrdD_018"))      ' 受注数量
-                .OrdD_019 = NCnvN(dt.Rows(0)("OrdD_019"))      ' 単位
-                .OrdD_020 = NCnvZ(dt.Rows(0)("OrdD_020"))      ' 販売単価
-                .OrdD_021 = NCnvZ(dt.Rows(0)("OrdD_021"))      ' (販売金額)
-                .OrdD_022 = NCnvZ(dt.Rows(0)("OrdD_022"))      ' 発注数量
-                .OrdD_023 = NCnvN(dt.Rows(0)("OrdD_023"))      ' 発注日付
+                .OrdD_001 = NCnvN(dr("OrdD_001"))      ' 契約№
+                .OrdD_002 = NCnvN(dr("OrdD_002"))      ' 見積№
+                .OrdD_003 = NCnvZ(dr("OrdD_003"))      ' SEQ
+                .OrdD_004 = NCnvZ(dr("OrdD_004"))      ' 項目
+                .OrdD_005 = NCnvN(dr("OrdD_005"))      ' 品名
+                .OrdD_006 = NCnvN(dr("OrdD_006"))      ' 品番
+                .OrdD_007 = NCnvN(dr("OrdD_007"))      ' 仕入先名称
+                .OrdD_0071 = NCnvZ(dr("OrdD_0071"))    ' 仕入先ｺｰﾄﾞ
+                .OrdD_008 = NCnvZ(dr("OrdD_008"))      ' 見積数量
+                .OrdD_009 = NCnvN(dr("OrdD_009"))      ' 単位
+                .OrdD_010 = NCnvZ(dr("OrdD_010"))      ' 見積販売単価
+                .OrdD_011 = NCnvZ(dr("OrdD_011"))      ' 見積販売金額
+                .OrdD_012 = NCnvZ(dr("OrdD_012"))      ' (見積原価単価)
+                .OrdD_013 = NCnvZ(dr("OrdD_013"))      ' 掛け率
+                .OrdD_014 = NCnvZ(dr("OrdD_014"))      ' 見積原価単価NET
+                .OrdD_015 = NCnvZ(dr("OrdD_015"))      ' (見積原価金額)
+                .OrdD_016 = NCnvZ(dr("OrdD_016"))      ' (粗利益)
+                .OrdD_017 = NCnvN(dr("OrdD_017"))      ' 仕入先名
+                .OrdD_018 = NCnvZ(dr("OrdD_018"))      ' 受注数量
+                .OrdD_019 = NCnvN(dr("OrdD_019"))      ' 単位
+                .OrdD_020 = NCnvZ(dr("OrdD_020"))      ' 販売単価
+                .OrdD_021 = NCnvZ(dr("OrdD_021"))      ' (販売金額)
+                .OrdD_022 = NCnvZ(dr("OrdD_022"))      ' 発注数量
+                .OrdD_023 = NCnvN(dr("OrdD_023"))      ' 発注日付
                 .OrdD_023 = IIf(.OrdD_023 = "1900/01/01", "", .OrdD_023)
-                .OrdD_024 = NCnvZ(dt.Rows(0)("OrdD_024"))      ' 仕入数量
-                .OrdD_025 = NCnvN(dt.Rows(0)("OrdD_025"))      ' 仕入日付
+                .OrdD_024 = NCnvZ(dr("OrdD_024"))      ' 仕入数量
+                .OrdD_025 = NCnvN(dr("OrdD_025"))      ' 仕入日付
                 .OrdD_025 = IIf(.OrdD_025 = "1900/01/01", "", .OrdD_025)
-                .OrdD_026 = NCnvZ(dt.Rows(0)("OrdD_026"))      ' 売上数量
-                .OrdD_027 = NCnvN(dt.Rows(0)("OrdD_027"))      ' 売上日付
+                .OrdD_026 = NCnvZ(dr("OrdD_026"))      ' 売上数量
+                .OrdD_027 = NCnvN(dr("OrdD_027"))      ' 売上日付
                 .OrdD_027 = IIf(.OrdD_027 = "1900/01/01", "", .OrdD_027)
-                .OrdD_028 = NCnvZ(dt.Rows(0)("OrdD_028"))      ' 請求数量
-                .OrdD_029 = NCnvN(dt.Rows(0)("OrdD_029"))      ' 請求日付
+                .OrdD_028 = NCnvZ(dr("OrdD_028"))      ' 請求数量
+                .OrdD_029 = NCnvN(dr("OrdD_029"))      ' 請求日付
                 .OrdD_029 = IIf(.OrdD_029 = "1900/01/01", "", .OrdD_029)
-                .OrdD_030 = NCnvZ(dt.Rows(0)("OrdD_030"))      ' (受注残数量)
-                .OrdD_031 = NCnvZ(dt.Rows(0)("OrdD_031"))      ' (発注残数量)
-                .OrdD_032 = NCnvZ(dt.Rows(0)("OrdD_032"))      ' 発注済フラグ
-                .OrdD_033 = NCnvZ(dt.Rows(0)("OrdD_033"))      ' 仕入済フラグ(完納)
-                .OrdD_034 = NCnvZ(dt.Rows(0)("OrdD_034"))      ' 売上済フラグ(完納)
-                .OrdD_035 = NCnvZ(dt.Rows(0)("OrdD_035"))      ' 請求済フラグ(完納)
+                .OrdD_030 = NCnvZ(dr("OrdD_030"))      ' (受注残数量)
+                .OrdD_031 = NCnvZ(dr("OrdD_031"))      ' (発注残数量)
+                .OrdD_032 = NCnvZ(dr("OrdD_032"))      ' 発注済フラグ
+                .OrdD_033 = NCnvZ(dr("OrdD_033"))      ' 仕入済フラグ(完納)
+                .OrdD_034 = NCnvZ(dr("OrdD_034"))      ' 売上済フラグ(完納)
+                .OrdD_035 = NCnvZ(dr("OrdD_035"))      ' 請求済フラグ(完納)
                 '--- INSERT 2011/11/01 青木 START --------------------------------------------------------------------------
-                .OrdD_038 = NCnvN(dt.Rows(0)("OrdD_038"))      ' 仕入先名
-                .OrdD_039 = NCnvZ(dt.Rows(0)("OrdD_039"))      ' 仕入先見積単価
-                .OrdD_040 = NCnvN(dt.Rows(0)("OrdD_040"))      ' 売上日付
+                .OrdD_038 = NCnvN(dr("OrdD_038"))      ' 仕入先名
+                .OrdD_039 = NCnvZ(dr("OrdD_039"))      ' 仕入先見積単価
+                .OrdD_040 = NCnvN(dr("OrdD_040"))      ' 売上日付
                 .OrdD_040 = IIf(.OrdD_040 = "1900/01/01", "", .OrdD_040)
                 '--- INSERT 2011/11/01 青木 E N D --------------------------------------------------------------------------
                 '--- INSERT 2011/11/09 青木 START --------------------------------------------------------------------------
-                .OrdD_0381 = NCnvN(dt.Rows(0)("OrdD_0381"))    ' 仕入先コード
+                .OrdD_0381 = NCnvN(dr("OrdD_0381"))    ' 仕入先コード
                 '--- INSERT 2011/11/09 青木 E N D --------------------------------------------------------------------------
-                .OrdD_041 = NCnvN(dt.Rows(0)("OrdD_041"))      ' ORIGIN                  'INSERT 2016/02/05 AOKI
-                .OrdD_042 = NCnvN(dt.Rows(0)("OrdD_042"))      ' Delivery Time           'INSERT 2016/04/05 AOKI
+                .OrdD_041 = NCnvN(dr("OrdD_041"))      ' ORIGIN                  'INSERT 2016/02/05 AOKI
+                .OrdD_042 = NCnvN(dr("OrdD_042"))      ' Delivery Time           'INSERT 2016/04/05 AOKI
             End With
             DCount = DCount + 1
         Next
